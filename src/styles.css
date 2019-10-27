@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(236, 245, 253);
+}
+.jumbotron{
+    background-color: rgb(236, 245, 253);
+    padding-top: 32px;
+    color: rgb(44, 64, 90);
+}
+.navbar{
+    background-color: rgb(45, 50, 61);
+    min-height: 100px;
+}
+.navbar-brand {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    min-height: 70px;
+  }
+#mainList{
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#mainHeader{
+    padding: 20px;
+}
+#todoInput {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid;
+    outline:none;
+    box-shadow:none;
+}
+#inputRow{
+    padding: 20px;
+}
+#submitBtn{
+    width: 100%;
+}
+#listText{
+    margin-left: 20px;
+}
+#delBtn{
+    color: red;
+}
+#delBtn:hover{
+    color: tomato;
+}

@@ -1,0 +1,7 @@
+<ul *ngFor="let todos of service.sortList" class="list-group list-group-flush">
+    <li class="list-group-item">
+        <input class="checkbox" (change)="todoDone(todos)" type="checkbox" name="done" [checked]="todos.done">
+        <span id="listText">{{todos.todo}}</span>
+        <button id="delBtn" style="float: right;" (click)="onDeleteClick(todos.key)"class="btn"><fa-icon [icon]="faTrash"></fa-icon></button>
+    </li>
+</ul>

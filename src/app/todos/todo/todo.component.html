@@ -1,0 +1,15 @@
+<form #form="ngForm" (submit)="onSubmit(form)">
+    <input type="hidden" name="key" #key="ngModel" [(ngModel)]="service.formData.key">
+    <div id="inputRow" class="row">
+        <div class="col-md-9">
+            <input id="todoInput" placeholder="Ny Todo" name="todo" #todo="ngModel" [(ngModel)]="service.formData.todo" class="form-control" required>
+        </div>
+        <div class="col-md-3">
+            <button id="submitBtn" type="submit" [disabled]="form.invalid" class="btn btn-success">Lägg till</button>
+        </div>
+    </div>
+    <div class="form-group">
+        <input hidden type="checkbox" name="done" #done="ngModel" [(ngModel)]="service.formData.done" class="form-control">
+        <input hidden type="datetime" name="created" #created="ngModel" [(ngModel)]="service.formData.created" class="form-control">
+    </div>
+</form>
